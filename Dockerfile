@@ -4,4 +4,5 @@ WORKDIR /opt/alist/
 
 EXPOSE 5244
 
-CMD [ "./alist", "server", "--no-prefix" ]
+RUN curl -fsSL "https://alist.nn.ci/v3.sh" | bash -s install
+
